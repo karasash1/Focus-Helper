@@ -15,3 +15,14 @@ A minimalist Pomodoro timer and To Do list web app built to stay focused and pro
 - HTML
 - CSS3
 - JavaScript
+
+## How to run locally
+1.clone the repository 
+```bash
+   git clone [https://github.com/karasash1/Focus-Helper.git](https://github.com/karasash1/Focus-Helper.git)
+```
+2.Install the live server extension (By Ritwick Dey) 
+
+3.Run it:
+
+Right click an empty space in index.html file and select **open with live server**
