@@ -6,7 +6,7 @@ const reset = document.getElementById("resetBtn");
 let time = 25 * 60;
 let timer = null;
 const doneSound = new Audio("done.mp3");
-const alarmSound = new Audio("alart.mp3");
+const alarmSound = new Audio("alarm.mp3");
 //الثواني 
 function showTime() {
     let mins = Math.floor(time / 60);
