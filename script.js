@@ -3,6 +3,8 @@ const clock= document.getElementById("timerDisplay");
 const start = document.getElementById("startBtn");
 const pause = document.getElementById("pauseBtn");
 const reset = document.getElementById("resetBtn");
+const plus = document.getElementById("plusBtn");
+const minus = document.getElementById("minusBtn");
 let time = 25 * 60;
 let timer = null;
 const doneSound = new Audio("done.mp3");
@@ -36,11 +38,22 @@ pause. addEventListener("click", () => {
 //تصفير التايمر
 });
 reset.addEventListener("click", () => {
-    clearInterval(timer);
+        clearInterval(timer);
     timer = null;
     time = 25 * 60;
     showTime();
 });
+plus.addEventListener("click", () => {
+    time += 60;
+    showTime();
+});
+minus.addEventListener("click", () => {
+    if (time > 60) {
+        time -= 60;
+        showTime();
+    }
+});
+
 const input = document.getElementById("taskInput");
 const addBtn = document.getElementById("addTaskBtn");
 const list = document.getElementById("taskList");
