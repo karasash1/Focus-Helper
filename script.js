@@ -17,6 +17,7 @@ function showTime() {
 }
 start.addEventListener("click", () => {
     if (timer) return;
+    alarmSound.load();
     timer = setInterval(() => {
         if (time > 0) {
             time--;
