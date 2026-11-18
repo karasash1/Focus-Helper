@@ -5,8 +5,8 @@ const pause = document.getElementById("pauseBtn");
 const reset = document.getElementById("resetBtn");
 let time = 25 * 60;
 let timer = null;
-const doneSound = new Audio("Paper Slide.mp3");
-const alarmSound = new Audio("Twitch.mp3");
+const doneSound = new Audio("done.mp3");
+const alarmSound = new Audio("alart.mp3");
 //الثواني 
 function showTime() {
     let mins = Math.floor(time / 60);
